@@ -1,12 +1,12 @@
-# Name: 
+# Name: Jacob Faski
 
 ## About Me
-* School Email: 
-* Dream Career: 
-* Hidden Talent: 
+* School Email: faskij2995@durhamtech.edu
+* Dream Career: Web UI designer, with a focus on CSS/ Scrum Master, I love working with people
+* Hidden Talent: I am a second degree black belt in tae kwon do
 
 ## Course Information
-* Semester: 
+* Semester: Fall
 * Course Name: CSC 118 - Swift Fundamentals I
 * Institution: [Durham Technical Community College](https://www.durhamtech.edu/)
 * Textbook: [Develop in Swift Fundamentals Xcode 15](https://books.apple.com/us/book/develop-in-swift-fundamentals/id6468967906)

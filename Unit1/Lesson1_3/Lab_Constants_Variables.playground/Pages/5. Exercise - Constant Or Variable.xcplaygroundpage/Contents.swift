@@ -1,4 +1,4 @@
-/*:
+O/*:
 ## Exercise - Constant or Variable?
  
  Imagine you're creating a simple photo sharing app. You want to keep track of the following metrics for each post:
@@ -10,6 +10,11 @@
  
  For each of the metrics above, declare either a constant or a variable and assign it a value corresponding to a hypothetical post. Be sure to use proper naming conventions.
  */
+var numLikes =
+var numComments =
+let yearCreated =
+let monthCreated =
+let dayCreated =
 
 
 /*:

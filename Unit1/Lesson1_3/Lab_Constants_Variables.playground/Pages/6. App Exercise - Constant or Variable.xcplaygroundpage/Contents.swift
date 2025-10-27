@@ -11,8 +11,14 @@
 - Goal number of steps: The user's goal for number of steps to take each day
 - Average heart rate: The user's average heart rate over the last 24 hours
  */
-
-
+let name = Jacob Faski;
+print("my name likely will not change that often so it's safe to be immutable");
+var age = 26;
+print("against my wishes, my age changes every year, so that value needs to be mutable");
+var numSteps = 3753;
+print("every step i take is another added, so this variable needs to be mutable");
+var avgHeartRate = 100;
+print("seeing as this changes every 24 hours, that needs to be a variable. not a constant, so it's mutable");
 /*:
  Now go back and add a line after each constant or variable declaration. On those lines, print a statement explaining why you chose to declare the piece of information as a constant or variable.
  

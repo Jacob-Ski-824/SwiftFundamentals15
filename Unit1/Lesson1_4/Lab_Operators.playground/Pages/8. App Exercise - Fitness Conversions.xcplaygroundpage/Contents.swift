@@ -9,7 +9,7 @@
  */
 let steps: Double = 3467
 let goal: Double = 10000
-
+let percentOfGoal: Double = (steps / goal) / 100
 /*:
  _Copyright © 2023 Apple Inc._
 

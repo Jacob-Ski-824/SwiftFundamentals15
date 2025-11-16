@@ -14,11 +14,26 @@ print(somePlace.latitude)
 print(somePlace.longitude)
 
 //:  In Structs, Instance, and Default Values, you also created a `Book` struct with properties `title`, `author`, `pages`, and `price`. Create this struct again without default values. Give each property the appropriate type. Declare your `favoriteBook` instance and pass in the values of your favorite book using the memberwise initializer. Print a statement about your favorite book using `favoriteBook`'s properties.
-
-
+struct Book {
+    var title: String
+    var author: String
+    var pages: Int
+    var price: Double
+}
+let favoriteBook = Book(title: "Voidscarred", author: "Mike Brooks", pages: 361, price: 9.99)
+print("My favorite book is \(favoriteBook.title) by \(favoriteBook.author).")
+print("It has \(favoriteBook.pages) pages and costs $\(favoriteBook.price).")
 /*:
  Make a `Laptop` struct with three variable properties, `screenSize` of type `Int`, `repairCount` of type `Int`, and `yearPurchased` of type `Int`. Give `screenSize` a default value of `13` and `repairCount` a default value of `0`, and leave `yearPurchased` without a default value. Declare two instances of `Laptop`, using the two provided memberwise initializers.
  */
+struct Laptop {
+    var screenSize: Int = 13
+    var repairCount: Int = 0
+    var yearPurchased: Int
+}
+
+let myLaptop = Laptop(yearPurchased: 2023)
+let oldLaptop = Laptop(screenSize: 15, repairCount: 2, yearPurchased: 2018)
 
 
 /*:
@@ -28,12 +43,32 @@ print(somePlace.longitude)
 
  - Example: If you use the initializer for inches to pass in a height of 65, the initializer should set `heightInInches` to 65 and `heightInCentimeters` to 165.1.
  */
+struct Height {
+    var heightInInches: Double
+    var heightInCentimeters: Double
 
+ init(inches: Double) {
+        self.heightInInches = inches
+        self.heightInCentimeters = inches * 2.54
+
+  init(centimeters: Double) {
+        self.heightInCentimeters = centimeters
+        self.heightInInches = centimeters / 2.54
+    }
+let height1 = Height(inches: 65)
+print(height1.heightInInches)      // 65
+print(height1.heightInCentimeters) // 165.1
 
 //:  Now create a variable instance of `Height` called `someonesHeight`. Use the initializer for inches to set the height to 65. Print out the property for height in centimeters and verify that it is equal to 165.1.
+var someonesHeight = Height(inches: 65)
+print(someonesHeight.heightInCentimeters)  
 
 
 //:  Now create a variable instance of `Height` called `myHeight` and initialize it with your own height. Verify that both `heightInInches` and `heightInCentimeters` are accurate.
+var myHeight = Height(inches: 68)
+
+print(myHeight.heightInInches)
+print(myHeight.heightInCentimeters)
 
 
 /*:
